@@ -39,12 +39,17 @@ To run this program, you need:
    git clone https://github.com/your-username/real-estate-advisor.git
 
 ## Usage
-
-- Compile the Program: First, compile the C program using a C compiler like GCC.
+- Clone the Repository
+- Navigate to the Project Directory
+- Compile the Program: First, compile the C program using a C compiler.
 - Run the Program: Execute the compiled program.
 - Enter Property Information: The program will prompt you to input property information such as property type (buy, rent, invest), location, budget, and any additional preferences.
 - Receive Advice: Based on the information you provide, the program will generate advice or suggestions related to real estate properties that match your criteria.
 - Exit the Program: After receiving the advice, you can exit the program.
+
+## Contributing
+
+- If you would like to contribute to this project, please open an issue or submit a pull request.We welcome contributions and improvements from the community.
 
 
    
