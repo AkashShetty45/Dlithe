@@ -134,7 +134,7 @@ void sellProperty() {
 }
 
 
-void insert() {
+void add_property() {
     FILE *fp;
     fp = fopen("techpro.txt", "ab+");
     if (fp == NULL) {
@@ -182,7 +182,7 @@ void search() {
     fclose(fp);
 }
 
-void deleteProperty() {
+void remove_Property() {
     FILE *fp, *ft;
     int pid;
     unsigned flag = 0;
@@ -282,10 +282,10 @@ int main() {
                 display();
                 break;
             case 2:
-                insert();
+                add_Property();
                 break;
             case 3:
-                deleteProperty(); 
+                remove_Property(); 
                 break;
             case 4:
                 search();
