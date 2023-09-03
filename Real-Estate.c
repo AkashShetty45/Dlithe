@@ -269,8 +269,8 @@ int main() {
         printf("********************************************************\n");
         printf("----------------------ADMIN MENU------------------------\n");
         printf("\t\t1. Display property\n");
-        printf("\t\t2. Insert property\n");
-        printf("\t\t3. Delete property\n");
+        printf("\t\t2. Add property\n");
+        printf("\t\t3. Remove property\n");
         printf("\t\t4. Search property\n");
         printf("\t\t5. Modify property\n");
         printf("\t\t6. Switch to user page\n");
