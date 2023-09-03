@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h> 
-double purse=100000;
+double purse=500000;
 
 struct property {
     int id;
