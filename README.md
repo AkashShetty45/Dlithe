@@ -42,7 +42,7 @@ To run this program, you need:
 
 - Compile the Program: First, compile the C program using a C compiler like GCC.
 - Run the Program: Execute the compiled program.
-- Input Property Information: The program will prompt you to input property information such as property type (buy, rent, invest), location, budget, and any additional preferences.
+- Enter Property Information: The program will prompt you to input property information such as property type (buy, rent, invest), location, budget, and any additional preferences.
 - Receive Advice: Based on the information you provide, the program will generate advice or suggestions related to real estate properties that match your criteria.
 - Exit the Program: After receiving the advice, you can exit the program.
 
