@@ -1,9 +1,9 @@
-# Dlithe
+# Dlithe Project 
 # Real Estate Advisor
 
 A simple program that provides advice based on property information.
 
-## Table of Contents
+## Table of contents 
 
 - [Introduction](#introduction)
 - [Features](#features)
