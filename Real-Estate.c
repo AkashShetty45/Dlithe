@@ -18,7 +18,7 @@ void display() {
         printf("Error: File not found or cannot be opened\n");
         return;
     }
-    printf("\n---Available property details are as follows:--\n");
+    printf("\n---Available Property details are as follows:----\n");
     printf("ID\tTYPE\t\tLOCATION\tPRICE\n"); 
     while (fread(&p, sizeof(p), 1, fp) == 1) {
         printf("%-6d\t%-10s\t%-8s\t%-6lf\n", p.id, p.types, p.location, p.price);
@@ -32,7 +32,7 @@ void display1() {
         printf("Error: File not found or cannot be opened\n");
         return;
     }
-    printf("\n---Owning property details are as follows:--\n");
+    printf("\n---Owning property details are as follows:----\n");
     printf("ID\tTYPE\t\tLOCATION\tPRICE\n"); 
     while (fread(&p, sizeof(p), 1, fp) == 1) {
         printf("%-6d\t%-10s\t%-8s\t%-6lf\n", p.id, p.types, p.location, p.price);
