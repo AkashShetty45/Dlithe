@@ -123,7 +123,7 @@ void sellProperty() {
     if (flag == 0) {
         printf("Error: Property not found in your list\n");
     } else {
-        printf("Successfully sold the property\n");
+        printf("Successfully sold the Property\n");
     }
 
     fclose(userFile);
@@ -141,15 +141,15 @@ void insert() {
         printf("Error: File not found or cannot be opened\n");
         return;
     }
-    printf("Enter new property details:\n");
-    printf("Enter property ID: ");
+    printf("Enter new Property details:\n");
+    printf("Enter Property ID: ");
     scanf("%d", &p.id);
     fflush(stdin);
-    printf("Enter property type: ");
+    printf("Enter Property type: ");
     scanf("%s", p.types);
-    printf("Enter property location: ");
+    printf("Enter Property location: ");
     scanf("%s", p.location); 
-    printf("Enter property price: ");
+    printf("Enter Property price: ");
     scanf("%lf", &p.price); 
     fwrite(&p, sizeof(p), 1, fp);
     printf("Property inserted successfully\n");
@@ -312,10 +312,10 @@ int main() {
         printf("********************************************************\n");
         printf("-----------------------USER MENU------------------------\n");
         printf("\t\t1. Display all properties\n");
-        printf("\t\t2. Search property\n");
-        printf("\t\t3. Buy property\n");
-        printf("\t\t4. Sell Porperty\n");
-        printf("\t\t5. Display owning properties\n");
+        printf("\t\t2. Search Property\n");
+        printf("\t\t3. Buy Property\n");
+        printf("\t\t4. Sell Property\n");
+        printf("\t\t5. Display owning Properties\n");
         printf("\t\t6. Switch to admin page\n");
         printf("\t\t7. Exit\n");
         printf("Enter your choice: ");
