@@ -18,7 +18,7 @@ void display() {
         printf("Error: File not found or cannot be opened\n");
         return;
     }
-    printf("\n---Available property details are as follows:---\n");
+    printf("\n---Available property details are as follows:--\n");
     printf("ID\tTYPE\t\tLOCATION\tPRICE\n"); 
     while (fread(&p, sizeof(p), 1, fp) == 1) {
         printf("%-6d\t%-10s\t%-8s\t%-6lf\n", p.id, p.types, p.location, p.price);
@@ -32,7 +32,7 @@ void display1() {
         printf("Error: File not found or cannot be opened\n");
         return;
     }
-    printf("\n---Owning property details are as follows:---\n");
+    printf("\n---Owning property details are as follows:--\n");
     printf("ID\tTYPE\t\tLOCATION\tPRICE\n"); 
     while (fread(&p, sizeof(p), 1, fp) == 1) {
         printf("%-6d\t%-10s\t%-8s\t%-6lf\n", p.id, p.types, p.location, p.price);
@@ -53,7 +53,7 @@ void buyProperty() {
     }
     display(); 
 
-    printf("Enter property id you want to buy: ");
+    printf("Enter Property id you want to buy: ");
     scanf("%d", &pid);
 
     ft = fopen("temp.txt", "wb");
@@ -68,7 +68,7 @@ void buyProperty() {
                 purchased=1;
             } else {
                 flag=2;
-                printf("Not enough money in your purse to buy this property.\n");
+                printf("Not enough money in your purse to buy this Property.\n");
             }
         } else {
             fwrite(&p, sizeof(p), 1, ft);
@@ -78,7 +78,7 @@ void buyProperty() {
     if (flag == 0) {
         printf("Error: No such record found\n");
     } else if (flag==1){
-        printf("Successfully bought the property\n");
+        printf("Successfully bought the Property\n");
     }
         fclose(fp);
     fclose(ft);
@@ -104,7 +104,7 @@ void sellProperty() {
 
     display1(); 
 
-    printf("Enter property id you want to sell: ");
+    printf("Enter the Property id you want to sell: ");
     scanf("%d", &pid);
 
     fp = fopen("techpro.txt", "ab+"); 
@@ -134,7 +134,7 @@ void sellProperty() {
 }
 
 
-void add_property() {
+void add_Property() {
     FILE *fp;
     fp = fopen("techpro.txt", "ab+");
     if (fp == NULL) {
@@ -168,7 +168,7 @@ void search() {
     }
     printf("Enter location where you want to search for properties: ");
     scanf("%s", loc); 
-    printf("\n---Available property details in %s are as follows:---\n", loc);
+    printf("\n---Available Property details in %s are as follows:---\n", loc);
     printf("ID\tTYPE\t\tLOCATION\tPRICE\n");
     while (fread(&p, sizeof(p), 1, fp) > 0) {
         if (strcasecmp(p.location, loc) == 0) { 
@@ -177,7 +177,7 @@ void search() {
         }
     }
     if (flag == 0) {
-        printf("\nNo properties available in %s\n", loc);
+        printf("\n No Properties available in %s\n", loc);
     }
     fclose(fp);
 }
@@ -192,7 +192,7 @@ void remove_Property() {
         return;
     }
     display();
-    printf("Enter property id you want to delete: ");
+    printf("Enter the Property id you want to delete: ");
     scanf("%d", &pid);
     ft = fopen("temp.txt", "wb"); 
     while (fread(&p, sizeof(p), 1, fp) == 1) {
@@ -206,7 +206,7 @@ void remove_Property() {
         printf("Error: No such record found\n");
     }
     else{
-        printf("Successfully deleted the property\n");
+        printf("Successfully deleted the Property\n");
     }
     fclose(fp);
     fclose(ft);
@@ -228,7 +228,7 @@ void update() {
     while (fread(&p, sizeof(p), 1, fp) > 0 && flag == 0) {
         if (p.id == pid) {
             flag = 1;
-            printf("Enter updated property details:\n");
+            printf("Enter updated property details: \n");
             printf("Enter updated property ID: ");
             scanf("%d", &p.id);
             fflush(stdin);
@@ -251,7 +251,7 @@ void update() {
 
 int main() {
     int ch,log,pwd;
-    printf("Enter 0 for admin login 1 for user: \n");
+    printf("Enter 0 for admin login || Enter 1 for user login : \n");
     scanf("%d",&log);
     if(log==0){
         printf("Enter admin password:  \n");
@@ -268,11 +268,11 @@ int main() {
         printf("\t\tReal Estate Advisor\n");
         printf("********************************************************\n");
         printf("----------------------ADMIN MENU------------------------\n");
-        printf("\t\t1. Display property\n");
-        printf("\t\t2. Add property\n");
-        printf("\t\t3. Remove property\n");
-        printf("\t\t4. Search property\n");
-        printf("\t\t5. Modify property\n");
+        printf("\t\t1. Display Property\n");
+        printf("\t\t2. Add Proprty\n");
+        printf("\t\t3. Remove Property\n");
+        printf("\t\t4. Search Property\n");
+        printf("\t\t5. Modify Property\n");
         printf("\t\t6. Switch to user page\n");
         printf("\t\t7. Exit\n");
         printf("Enter your choice: ");
@@ -311,7 +311,7 @@ int main() {
         printf("\t\tReal Estate Advisor\n");
         printf("********************************************************\n");
         printf("-----------------------USER MENU------------------------\n");
-        printf("\t\t1. Display all properties\n");
+        printf("\t\t1. Display all Properties\n");
         printf("\t\t2. Search Property\n");
         printf("\t\t3. Buy Property\n");
         printf("\t\t4. Sell Property\n");
