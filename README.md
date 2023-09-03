@@ -51,5 +51,7 @@ To run this program, you need:
 
 - If you would like to contribute to this project, please open an issue or submit a pull request.We welcome contributions and improvements from the community.
 
+## License
 
+- This project is licensed under the MIT License
    
