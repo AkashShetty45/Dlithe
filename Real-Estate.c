@@ -15,7 +15,7 @@ void display() {
     FILE *fp;
     fp = fopen("techpro.txt", "rb");
     if (fp == NULL) {
-        printf("Error: File not found or it cannot be opened\n");
+        printf("Error: File not found or cannot be opened\n");
         return;
     }
     printf("\n---Available Property details are as follows:----\n");
