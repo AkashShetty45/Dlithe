@@ -269,7 +269,7 @@ int main() {
         printf("********************************************************\n");
         printf("----------------------ADMIN MENU------------------------\n");
         printf("\t\t1. Display Property\n");
-        printf("\t\t2. Add Proprty\n");
+        printf("\t\t2. Add Property\n");
         printf("\t\t3. Remove Property\n");
         printf("\t\t4. Search Property\n");
         printf("\t\t5. Modify Property\n");
@@ -311,7 +311,7 @@ int main() {
         printf("\t\tReal Estate Advisor\n");
         printf("********************************************************\n");
         printf("-----------------------USER MENU------------------------\n");
-        printf("\t\t1. Display all Properties\n");
+        printf("\t\t1. Display all the Properties\n");
         printf("\t\t2. Search Property\n");
         printf("\t\t3. Buy Property\n");
         printf("\t\t4. Sell Property\n");
