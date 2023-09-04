@@ -123,7 +123,7 @@ void sellProperty() {
     if (flag == 0) {
         printf("Error: Property not found in your list\n");
     } else {
-        printf("Successfully sold the Property\n");
+        printf("Property sold successfully\n");
     }
 
     fclose(userFile);
