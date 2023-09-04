@@ -15,7 +15,7 @@ void display() {
     FILE *fp;
     fp = fopen("techpro.txt", "rb");
     if (fp == NULL) {
-        printf("Error: File not found or cannot be opened\n");
+        printf("Error: File not found or it cannot be opened\n");
         return;
     }
     printf("\n---Available Property details are as follows:----\n");
@@ -68,7 +68,7 @@ void buyProperty() {
                 purchased=1;
             } else {
                 flag=2;
-                printf("Not enough money in your purse to buy this Property.\n");
+                printf("Not enough puse value to buy this Property.\n");
             }
         } else {
             fwrite(&p, sizeof(p), 1, ft);
