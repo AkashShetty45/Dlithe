@@ -251,7 +251,7 @@ void update() {
 
 int main() {
     int ch,log,pwd;
-    printf("Enter 0 for admin login || Enter 1 for user login : \n");
+    printf("Enter 0 for admin login OR Enter 1 for user login : \n");
     scanf("%d",&log);
     if(log==0){
         printf("Enter admin password:  \n");
@@ -311,7 +311,7 @@ int main() {
         printf("\t\tReal Estate Advisor\n");
         printf("********************************************************\n");
         printf("-----------------------USER MENU------------------------\n");
-        printf("\t\t1. Display all the Properties\n");
+        printf("\t\t1. Display all Properties\n");
         printf("\t\t2. Search Property\n");
         printf("\t\t3. Buy Property\n");
         printf("\t\t4. Sell Property\n");
@@ -341,11 +341,11 @@ int main() {
                 break;
             default:
                 printf("Invalid choice\n");
+            }
         }
     }
-    }
     else{
-        printf("Invalid input!!!!!\n");
+        printf("Invalid input!!!!\n");
         main();
     }
     
